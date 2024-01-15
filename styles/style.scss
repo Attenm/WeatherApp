@@ -1,0 +1,13 @@
+@import 'normalize';
+@import 'fonts';
+@import 'variables';
+@import 'media-queries';
+@import 'header';
+
+body {
+    font-family: $font-family;
+    font-size: 18px;
+    background: $background;
+}
+
+

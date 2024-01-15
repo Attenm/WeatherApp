@@ -1,0 +1,39 @@
+.header {
+    height: 58px;
+    background-color: $color-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    height: 44px;
+    width: 44px;
+}
+
+.weather-range {
+    &__list {
+        display: flex;
+        gap: 18px;
+    }
+
+    &__item {
+        cursor: pointer;
+        color: $color-secondary;
+
+        &--active {
+            color: $color-accent-light;
+        }
+    }
+}
+
+.burger-menu-icon {
+    cursor: pointer;
+}

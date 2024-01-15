@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 24px;
+  }
+  .header {
+    height: 78px;
+  }
+}
+.header {
+  height: 58px;
+  background-color: #1B1F29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 21px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo {
+  height: 44px;
+  width: 44px;
+}
+
+.weather-range__list {
+  display: flex;
+  gap: 18px;
+}
+.weather-range__item {
+  cursor: pointer;
+  color: #B0B0B0;
+}
+.weather-range__item--active {
+  color: #C8A0FC;
+}
+
+.burger-menu-icon {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(180deg, #062C43 0%, #064469 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
