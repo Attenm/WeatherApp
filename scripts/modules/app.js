@@ -9,8 +9,8 @@ class App {
 
     init(){
         this.header.render();
-        this.RequestHandler.getData('weather').then((response)=>{
-            console.log(response)
+        this.RequestHandler.getData('weather').then((response) => {
+            console.log(response);
         });
         
     }

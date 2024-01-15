@@ -1,8 +1,7 @@
 .search-city{
     &__section{
         height: 48px;
-        display: grid;
-        grid-template-columns: 8fr 1fr;
+        display: flex;
         grid-gap: $gap-sm;
     }
     
@@ -19,6 +18,7 @@
         padding: 0 42px;
 
         &-wrapper{
+            width: 100%;
             position: relative;
         }
     }
@@ -41,7 +41,9 @@
 .user-icon {
     height: 100%;
     width: 100%;
+
     &__holder{
+        min-width: 48px;
         overflow: hidden;
         border-radius: 50%;
         border: 1px solid $color-font;

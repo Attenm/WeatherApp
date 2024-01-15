@@ -64,12 +64,12 @@ body {
 .content {
   padding: 16px 21px;
   display: grid;
+  grid-gap: 13px;
 }
 
 .search-city__section {
   height: 48px;
-  display: grid;
-  grid-template-columns: 8fr 1fr;
+  display: flex;
   grid-gap: 13px;
 }
 .search-city__bar {
@@ -85,6 +85,7 @@ body {
   padding: 0 42px;
 }
 .search-city__bar-wrapper {
+  width: 100%;
   position: relative;
 }
 
@@ -107,12 +108,44 @@ body {
   width: 100%;
 }
 .user-icon__holder {
+  min-width: 48px;
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid #fff;
 }
 
-@media screen and (min-width: 576px) {
+.current-weather__container {
+  position: relative;
+  min-height: 320px;
+  height: 50vw;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 20px;
+  background-image: url(../images/main-frog.png);
+}
+.current-weather__icon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.current-weather__info {
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 15px;
+}
+
+.info__temp {
+  font-size: 64px;
+}
+.info__weather-state {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.info__temp-range {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
   body {
     font-size: 24px;
   }

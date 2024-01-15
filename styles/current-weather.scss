@@ -1,0 +1,37 @@
+.current-weather{
+    &__container{
+        position: relative;
+        min-height: 320px;
+        height: 50vw;
+        background-size: cover;
+        background-position: bottom;
+        border-radius: $border-radius;
+        background-image: url(../images/main-frog.png);
+    }
+
+    &__icon{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+
+    &__info{
+        color: $color-font;
+        font-weight: 600;
+        padding: 20px 15px;
+    }
+}
+
+.info{
+    &__temp{
+        font-size: 64px;
+
+    }
+    &__weather-state{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    &__temp-range {
+        font-size: 18px;
+    }
+}
