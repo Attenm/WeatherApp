@@ -19,14 +19,12 @@ ul {
   list-style-type: none;
 }
 
-@media screen and (min-width: 576px) {
-  body {
-    font-size: 24px;
-  }
-  .header {
-    height: 78px;
-  }
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(180deg, #062C43 0%, #064469 100%);
 }
+
 .header {
   height: 58px;
   background-color: #1B1F29;
@@ -63,10 +61,20 @@ ul {
   cursor: pointer;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  background: linear-gradient(180deg, #062C43 0%, #064469 100%);
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 24px;
+  }
+  .header {
+    height: 78px;
+    padding: 0 30px;
+  }
+  .navigation {
+    gap: 15px;
+  }
+  .weather-range__list {
+    gap: 31px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

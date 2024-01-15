@@ -5,5 +5,16 @@
 
     .header {
         height: 78px;
+        padding: 0 30px;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .weather-range {
+        &__list {
+            gap: 31px;
+        }
     }
 }
