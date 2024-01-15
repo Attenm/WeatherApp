@@ -75,6 +75,10 @@ body {
   .weather-range__list {
     gap: 31px;
   }
+  .burger-menu-icon {
+    height: 28px;
+    width: 23;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

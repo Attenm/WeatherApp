@@ -1,1 +1,5 @@
-const apiKey = '650874f80904ead3176ae6acf4211548';
+'use strict'
+
+import app from "./modules/app.js"
+
+app.init();
