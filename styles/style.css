@@ -23,6 +23,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   background: linear-gradient(180deg, #062C43 0%, #064469 100%);
+  color: #fff;
 }
 
 .header {
@@ -75,9 +76,9 @@ body {
 .search-city__bar {
   height: 100%;
   width: 100%;
-  background-color: rgba(22, 27, 30, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(27, 31, 41, 0.3);
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-family: inherit;
   font-size: inherit;
   font-weight: 600;
@@ -129,7 +130,6 @@ body {
   right: -10px;
 }
 .current-weather__info {
-  color: #fff;
   font-weight: 600;
   padding: 20px 15px;
 }
@@ -150,19 +150,57 @@ body {
   grid-template-columns: repeat(3, 1fr);
   font-size: 14px;
   height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
   background-color: rgba(27, 31, 41, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .info-bar__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
 }
 .info-bar__icon {
   height: 17px;
   margin-right: 8px;
+}
+
+.today-info__container {
+  background-color: rgba(27, 31, 41, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 17px;
+  font-size: 14px;
+}
+.today-info__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border-bottom: 1px solid #B0B0B0;
+  padding-bottom: 12px;
+}
+.today-info__date {
+  color: #B0B0B0;
+}
+.today-info__content__list {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.today-info__content__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.today-info__time, .today-info__temp-range {
+  font-size: 12px;
+  color: #B0B0B0;
+}
+.today-info__icon {
+  width: 48px;
+  height: 48px;
+  margin: 7px 0;
 }
 
 @media screen and (min-width: 800px) {

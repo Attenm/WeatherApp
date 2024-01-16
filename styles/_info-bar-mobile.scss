@@ -4,16 +4,13 @@
         grid-template-columns: repeat(3, 1fr);
         font-size: 14px;
         height: 48px;
-        border: $border;
-        border-radius: $border-radius;
-        background-color: $color-dark;
+        @include standardContainer;
     }
 
     &__item{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $color-font;
     }
 
     &__icon {

@@ -8,9 +8,7 @@
     &__bar{
         height: 100%;
         width: 100%;
-        background-color: $color-accent-dark;
-        border: $border;
-        border-radius: $border-radius;
+        @include standardContainer;
         font-family: inherit;
         font-size: inherit;
         font-weight: 600;
