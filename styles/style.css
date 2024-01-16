@@ -242,7 +242,7 @@ body {
   padding-bottom: 8px;
   padding-inline: 12px;
 }
-.near-cities__city-name {
+.near-cities__name {
   font-size: 14px;
   margin: 13px 0;
 }
@@ -251,6 +251,38 @@ body {
   margin-bottom: 5px;
 }
 .near-cities__info {
+  align-self: normal;
+  display: flex;
+  justify-content: space-between;
+  color: #B0B0B0;
+  margin-top: 8px;
+}
+
+.day-week__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  font-size: 12px;
+}
+.day-week__item {
+  background-color: rgba(27, 31, 41, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
+  padding-inline: 12px;
+}
+.day-week__name {
+  font-size: 14px;
+  margin: 13px 0;
+}
+.day-week__weather-icon {
+  width: 50%;
+  margin-bottom: 5px;
+}
+.day-week__info {
   align-self: normal;
   display: flex;
   justify-content: space-between;

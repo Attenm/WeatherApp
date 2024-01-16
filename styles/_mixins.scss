@@ -10,3 +10,27 @@
     color: inherit;
     padding: 0 42px;
 }
+
+@mixin dateRangeInfo{
+    align-self: normal;
+    display: flex;
+    justify-content: space-between;
+    color: $color-secondary;
+    margin-top: 8px;
+}
+
+@mixin weatherList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap-sm;
+    font-size: 12px;
+}
+
+@mixin weatherItem {
+    @include standardContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-inline: 12px;
+}
