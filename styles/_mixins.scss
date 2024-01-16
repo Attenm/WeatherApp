@@ -3,3 +3,10 @@
     border-radius: $border-radius;
     border: $border;
 }
+@mixin searchBar {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    color: inherit;
+    padding: 0 42px;
+}

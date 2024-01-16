@@ -9,12 +9,7 @@
         height: 100%;
         width: 100%;
         @include standardContainer;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: 600;
-        color: $color-font;
-        padding: 0 42px;
-
+        @include searchBar;
         &-wrapper{
             width: 100%;
             position: relative;
