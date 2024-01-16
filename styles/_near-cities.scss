@@ -1,0 +1,35 @@
+.near-cities{
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $gap-sm;
+        font-size: 12px;
+    }
+    
+    &__item{
+        @include standardContainer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 8px;
+        padding-inline: 12px;
+    }
+
+    &__city-name{
+        font-size: 14px;
+        margin: 13px 0;
+    }
+
+    &__weather-icon{
+        width: 50%;
+        margin-bottom: 5px;
+    }
+    
+    &__info{
+        align-self: normal;
+        display: flex;
+        justify-content: space-between;
+        color: $color-secondary;
+        margin-top: 8px;
+    }
+}
