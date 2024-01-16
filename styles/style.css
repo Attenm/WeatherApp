@@ -145,6 +145,26 @@ body {
   font-size: 18px;
 }
 
+.info-bar__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 14px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  background-color: rgba(27, 31, 41, 0.3);
+}
+.info-bar__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.info-bar__icon {
+  height: 17px;
+  margin-right: 8px;
+}
+
 @media screen and (min-width: 800px) {
   body {
     font-size: 24px;
