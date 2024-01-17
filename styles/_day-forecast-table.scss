@@ -1,0 +1,49 @@
+.day-forecast{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: $gap-sm;
+    }
+
+    &__date-wrapper{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include standardContainer;
+        height: 48px;
+        padding: 0 17px;
+    }
+
+    &__list{
+        padding: 19px 17px;
+        display: grid;
+        flex-direction: column;
+        gap: $gap-sm;
+        @include standardContainer;
+    }
+
+    &__item{
+        display: flex;
+        line-height: 36px;
+        justify-content: space-between;
+    }
+
+    &__time{
+        font-size: 14px;
+    }
+
+    &__icon{
+        height: 36px;
+    }
+
+    &__range{
+        font-size: 16px;
+    }
+}
+.date{
+    &__icon-calendar{
+        width: 20px;
+        height: 22px;
+    }
+}

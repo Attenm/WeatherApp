@@ -290,6 +290,51 @@ body {
   margin-top: 8px;
 }
 
+.day-forecast__container {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.day-forecast__date-wrapper {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(27, 31, 41, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 48px;
+  padding: 0 17px;
+}
+.day-forecast__list {
+  padding: 19px 17px;
+  display: grid;
+  flex-direction: column;
+  gap: 13px;
+  background-color: rgba(27, 31, 41, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.day-forecast__item {
+  display: flex;
+  line-height: 36px;
+  justify-content: space-between;
+}
+.day-forecast__time {
+  font-size: 14px;
+}
+.day-forecast__icon {
+  height: 36px;
+}
+.day-forecast__range {
+  font-size: 16px;
+}
+
+.date__icon-calendar {
+  width: 20px;
+  height: 22px;
+}
+
 @media screen and (min-width: 800px) {
   body {
     font-size: 24px;
