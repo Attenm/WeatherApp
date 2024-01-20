@@ -5,8 +5,7 @@ export default class RequestHandler {
 
     getData(requestType) {
         return location.getUserLocation().then(()=>{
-            
-            const requestUrl = `${url}${requestType}?lat=${location.latitude}&lon=${location.longtitude}&appid=${apiKey}`;
+            const requestUrl = `${url}${requestType}?lat=${location.latitude}&lon=${location.longtitude}&units=metric&appid=${apiKey}`;
             return new Promise((resolve, reject) => {
                 fetch(requestUrl)
                     .then((response) => {

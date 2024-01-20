@@ -8,109 +8,9 @@
 </head>
 <body>
     <div class="app__wrapper">
-        <div class="content">
-            <div class="search-city__section">
-                <div class="search-city__bar-wrapper">
-                    <img src="icons/special/search.svg" alt="search icon" class="search-icon">
-                    <input type="text" class="search-city__bar" value="Київ">
-                    <img src="icons/special/location.svg" alt="location icon" class="location-icon">
-                </div>
-                <div class="user-icon__holder">
-                    <img src="./images/avatar.png" alt="user avatar" class="user-icon">
-                </div>
-            </div>
-            <div style="display: none;" class="current-weather__container">
-                <img src="icons/weather-icons/sun-partial-cloudy.png" alt="current weather icon" class="current-weather__icon">
-                <div class="current-weather__info">
-                    <div class="info__temp">10&deg;</div>
-                    <div class="info__weather-state">Мінлива хмарність</div>
-                    <div class="info__temp-range">12&deg;/07&deg;</div>
-                </div>
-            </div>
-            <ul style="display: none;" class="info-bar__list">
-                <li class="info-bar__item">
-                    <img class="info-bar__icon" src="./icons/weather-icons/precipitation.png" alt="probability of precipitation icon">
-                    <span class="info-bar__value">6%</span>
-                </li>
-                <li class="info-bar__item">
-                    <img class="info-bar__icon" src="./icons/weather-icons/dew-point.png" alt="dew point icon">
-                    <span class="info-bar__value">3&deg;</span>
-                </li>
-                <li class="info-bar__item">
-                    <img class="info-bar__icon" src="./icons/weather-icons/wind.png" alt="wind speed icon">
-                    <span class="info-bar__value">19 km/h</span>
-                </li>
-            </ul>
-            <div style="display: none;" class="today-info__container">
-                <div class="today-info__header">
-                    Сьогодні
-                    <span class="today-info__date">15.01.2024</span>
-                </div>
-                <ul class="today-info__content__list">
-                    <li class="today-info__content__item">
-                        <div class="today-info__hours">08:00</div>
-                        <div class="today-info__time">Ранок</div>
-                        <img class="today-info__icon" src="icons/weather-icons/sun-full.png" alt="clearsun icon">
-                        <div class="today-info__weather-state">Сонячно</div>
-                        <div class="today-info__temp-range">10-12&deg;</div>
-                    </li>
-                    <li class="today-info__content__item">
-                        <div class="today-info__hours">08:00</div>
-                        <div class="today-info__time">Ранок</div>
-                        <img class="today-info__icon" src="icons/weather-icons/sun-full.png" alt="clearsun icon">
-                        <div class="today-info__weather-state">Сонячно</div>
-                        <div class="today-info__temp-range">10-12&deg;</div>
-                    </li>
-                    <li class="today-info__content__item">
-                        <div class="today-info__hours">08:00</div>
-                        <div class="today-info__time">Ранок</div>
-                        <img class="today-info__icon" src="icons/weather-icons/sun-full.png" alt="clearsun icon">
-                        <div class="today-info__weather-state">Сонячно</div>
-                        <div class="today-info__temp-range">10-12&deg;</div>
-                    </li>
-                    <li class="today-info__content__item">
-                        <div class="today-info__hours">08:00</div>
-                        <div class="today-info__time">Ранок</div>
-                        <img class="today-info__icon" src="icons/weather-icons/sun-full.png" alt="clearsun icon">
-                        <div class="today-info__weather-state">Сонячно</div>
-                        <div class="today-info__temp-range">10-12&deg;</div>
-                    </li>
-                </ul>
-            </div>
-            <div style="display: none;" class="near-cities__bar-wrapper">
-                <input type="text" class="near-cities__search-bar" value="Міста поруч">
-                <img src="icons/special/search.svg" alt="search icon" class="near-cities__search-icon">
-            </div>
-            <ul style="display: none;" class="near-cities__list">
-                <li class="near-cities__item">
-                    <div class="near-cities__name">Черкаси</div>
-                    <img class="near-cities__weather-icon" src="./icons/weather-icons/heavy-rain.png" alt="heavy rain img">
-                    <div class="near-cities__weather-state">Дощ</div>
-                    <div class="near-cities__info">
-                        <span class="info__date">15.01</span>
-                        <span class="info__range">-5-0</span>
-                    </div>
-                </li>
-                <li class="near-cities__item">
-                    <div class="near-cities__name">Черкаси</div>
-                    <img class="near-cities__weather-icon" src="./icons/weather-icons/heavy-rain.png" alt="heavy rain img">
-                    <div class="near-cities__weather-state">Дощ</div>
-                    <div class="near-cities__info">
-                        <span class="info__date">15.01</span>
-                        <span class="info__range">-5-0</span>
-                    </div>
-                </li>
-                <li class="near-cities__item">
-                    <div class="near-cities__name">Черкаси</div>
-                    <img class="near-cities__weather-icon" src="./icons/weather-icons/heavy-rain.png" alt="heavy rain icon">
-                    <div class="near-cities__weather-state">Дощ</div>
-                    <div class="near-cities__info">
-                        <div class="info__date">15.01</div>
-                        <div class="info__range">-5-0</div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="day-week__list">
+        <!-- <div class="content">
+            
+            <ul style="display: none;" class="day-week__list">
                 <li class="day-week__item">
                     <div class="day-week__name">Понеділок</div>
                     <img class="day-week__weather-icon" src="./icons/weather-icons/thunderstorm.png" alt="weather icon">
@@ -166,7 +66,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="day-forecast__container">
+            <div style="display: none;" class="day-forecast__container">
                 <div class="day-forecast__date-wrapper">
                     <span class="date__current-date">Вівторок: 15.01</span>
                     <img src="./icons/special/calendar.svg" alt="calendar icon" class="date__icon-calendar">
@@ -216,8 +116,7 @@
                     </li>
                 </ul>
             </div>
-            
-        </div>
+        </div> -->
     </div>
     <script src="scripts/index.js" type="module"></script>
 </body>

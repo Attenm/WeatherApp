@@ -1,7 +1,7 @@
 .info-bar {
     &__list{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         font-size: 14px;
         height: 48px;
         @include standardContainer;

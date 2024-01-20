@@ -8,11 +8,11 @@ export default class Header{
         const headerHtml = `<div class="header">
             <div class="navigation">
                 <a href="index.html" class="logo__container">
-                    <img src="icons/weather-icons/moon-partially-cloudy.png" alt="weather app logo" class="logo">
+                    <img src="icons/weather-icons/03n.png" alt="weather app logo" class="logo">
                 </a>
                 <ul class="weather-range__list">
-                    <li class="weather-range__item weather-range__item--active">Сьогодні</li>
-                    <li class="weather-range__item">6 днів</li>
+                    <li class="weather-range__item weather-range__item--active" data-weathertype="weather">Сьогодні</li>
+                    <li class="weather-range__item" data-weathertype="forecast">5 днів</li>
                 </ul>
             </div>
             <div class="burger-menu__icon-holder">
