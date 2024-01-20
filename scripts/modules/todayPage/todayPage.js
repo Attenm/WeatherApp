@@ -8,7 +8,7 @@ import NeatCities from "../todayPage/nearCities.js";
 
 export default class todayPage {
     constructor(){
-        this.wrapper = document.querySelector('.content');
+        this.wrapper = null;
         this.citySearch = new CitySearch();
         this.cityName = null;
         this.weatherImage = new WeatherImage();
@@ -17,8 +17,9 @@ export default class todayPage {
         this.nearCitiesSearch = new NearCitiesSearch();
         this.nearCities = new NeatCities();
     }
-
+    
     render(){
+        this.wrapper = document.querySelector('.content');
         this.cityName = app.currentWeather.name;
         this.citySearch.render(this.cityName);
         this.weatherImage.render();
@@ -29,6 +30,6 @@ export default class todayPage {
     }
 
     remove(){
-        this.wrapper.remove();
+        this.wrapper.innerHTML = '';
     }
 }

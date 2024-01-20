@@ -2,6 +2,7 @@ import Header from "./header.js";
 import RequestHandler from "./requestHandler.js";
 import todayPage from "./todayPage/todayPage.js";
 import { filteredDays } from "./utils.js";
+import FiveDaysPage from "./fiveDaysPage/fiveDaysPage.js";
 
 class App {
     constructor(){
@@ -9,6 +10,7 @@ class App {
         this.header = new Header();
         this.todayPage = new todayPage();
         this.currentWeather = null;
+        this.fiveDaysPage = new FiveDaysPage();
     }
 
     init(){
