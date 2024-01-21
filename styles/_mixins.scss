@@ -11,12 +11,12 @@
     padding: 0 42px;
 }
 
-@mixin dateRangeInfo{
+@mixin tempInfo{
     align-self: normal;
     display: flex;
-    justify-content: space-between;
     color: $color-secondary;
     margin-top: 8px;
+    justify-content: center;
 }
 
 @mixin weatherList {

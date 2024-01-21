@@ -253,9 +253,9 @@ body {
 .near-cities__info {
   align-self: normal;
   display: flex;
-  justify-content: space-between;
   color: #B0B0B0;
   margin-top: 8px;
+  justify-content: center;
 }
 
 .day-week__list {
@@ -285,9 +285,9 @@ body {
 .day-week__info {
   align-self: normal;
   display: flex;
-  justify-content: space-between;
   color: #B0B0B0;
   margin-top: 8px;
+  justify-content: center;
 }
 
 .day-forecast__container {

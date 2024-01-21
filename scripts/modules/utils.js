@@ -1,4 +1,3 @@
-import app from "./app.js";
 
 export const capitalize = function(string){
     return string.replace(string[0], string[0].toUpperCase());
@@ -18,5 +17,9 @@ export const filteredDays = function(timeStamps){
     }
 
     return groupedByDay;
+}
+
+export const findCityByName = function(cityName){
+    
 }
  
