@@ -1,5 +1,6 @@
 import app from "../app.js";
 import CitySearch from "../citySearch.js";
+import SelectedForecast from "./selectedForecast.js";
 import WeekList from "./weekList.js";
 
 export default class FiveDaysPage {
@@ -9,6 +10,7 @@ export default class FiveDaysPage {
         this.app = null;
         this.cityName = null;
         this.weekList = new WeekList();
+        this.selectedForecast = new SelectedForecast();
     }
 
     render(){
@@ -17,5 +19,6 @@ export default class FiveDaysPage {
         this.cityName = this.app.currentWeather.name;
         this.citySeach.render(this.cityName);
         this.weekList.render();
+        this.selectedForecast.render();
     }
 }

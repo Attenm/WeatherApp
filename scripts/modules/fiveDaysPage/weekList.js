@@ -19,15 +19,15 @@ export default class WeekList {
         let weekItemsHtml = '';
         app.filteredDays.length = 5;
         app.filteredDays.forEach((day) => {
-
+            const index = Math.floor(day.length/2);
             const date = new Date(day[0].dt*1000);
             const dayOfWeek = date.getDay();
             const dayOfWeekName = dayNames[dayOfWeek];
-            const icon = day[Math.floor(day.length/2)].weather[0].icon;
-            const temp = Math.round(day[Math.floor(day.length/2)].main.temp);
+            const icon = day[index].weather[0].icon;
+            const temp = Math.round(day[index].main.temp);
             const dayOfMonth = date.getDate().toString().padStart(2, '0');
             const month = (date.getMonth() + 1).toString().padStart(2, '0');
-            const weatherType = capitalize(day[Math.floor(day.length/2)].weather[0].description);
+            const weatherType = capitalize(day[index].weather[0].description);
 
             weekItemsHtml += `<li class="day-week__item">
             <div class="day-week__name">${dayOfWeekName}</div>

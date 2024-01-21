@@ -18,7 +18,7 @@ export default class TodayWeather {
         this.weatherWeek[0].forEach(timeStamp => {
             const date = new Date(timeStamp.dt * 1000);
             const hours = date.getHours();
-            const time = date.getHours().toString().padStart('0', 2) + ':00';
+            const time = hours.toString().padStart(2, '0') + ':00';
             let timePeriod = '';
             if(hours >= 8 && hours < 12 ){
                 timePeriod = 'Morning';

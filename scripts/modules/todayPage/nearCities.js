@@ -1,5 +1,6 @@
 import location from "../location.js";
 import { apiKey } from "../constants.js";
+import { capitalize } from "../utils.js";
 
 export default class NeatCities {
     render() {
@@ -19,7 +20,7 @@ export default class NeatCities {
         this.citiesList.forEach(city => {
             const cityname = city.name;
             const weatherIcon = city.weather[0].icon;
-            const weatherName = city.weather[0].main;
+            const weatherName = capitalize(city.weather[0].description);
             const temp = Math.round(city.main.temp);
             
             nearCitiesItems += `<li class="near-cities__item">

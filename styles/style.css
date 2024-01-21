@@ -23,6 +23,9 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #fff;
+  background: linear-gradient(180deg, #062C43 0%, #064469 100%);
+  background-position-y: 58px;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -65,7 +68,6 @@ body {
   padding: 16px 21px;
   display: grid;
   grid-gap: 13px;
-  background: linear-gradient(180deg, #062C43 0%, #064469 100%);
 }
 
 .search-city__section {
@@ -186,12 +188,15 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 .today-info__content__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 6px;
+  min-width: 25%;
 }
 .today-info__time, .today-info__temp-range {
   font-size: 12px;
@@ -320,6 +325,9 @@ body {
   display: flex;
   line-height: 36px;
   justify-content: space-between;
+}
+.day-forecast__weather-type {
+  width: 35%;
 }
 .day-forecast__time {
   font-size: 14px;
