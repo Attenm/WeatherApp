@@ -17,12 +17,17 @@ export default class NeatCities {
     getNearCitiesItems(){
         let nearCitiesItems = '';
         this.citiesList.forEach(city => {
+            const cityname = city.name;
+            const weatherIcon = city.weather[0].icon;
+            const weatherName = city.weather[0].main;
+            const temp = Math.round(city.main.temp);
+            
             nearCitiesItems += `<li class="near-cities__item">
-            <div class="near-cities__name">${city.name}</div>
-            <img class="near-cities__weather-icon" src="./icons/weather-icons/${city.weather[0].icon}.png" alt="weather img">
-            <div class="near-cities__weather-state">${city.weather[0].main}</div>
+            <div class="near-cities__name">${cityname}</div>
+            <img class="near-cities__weather-icon" src="./icons/weather-icons/${weatherIcon}.png" alt="weather img">
+            <div class="near-cities__weather-state">${weatherName}</div>
             <div class="near-cities__info">
-                <span class="info__range">${Math.round(city.main.temp)}&deg;</span>
+                <span class="info__range">${temp}&deg;</span>
             </div>
         </li>`
         });
