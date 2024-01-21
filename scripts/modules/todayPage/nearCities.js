@@ -20,7 +20,7 @@ export default class NeatCities {
         this.citiesList.forEach(city => {
             const cityname = city.name;
             const weatherIcon = city.weather[0].icon;
-            const weatherName = capitalize(city.weather[0].description);
+            const weatherName = capitalize(city.weather[0].main);
             const temp = Math.round(city.main.temp);
             
             nearCitiesItems += `<li class="near-cities__item">

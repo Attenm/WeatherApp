@@ -30,7 +30,7 @@ export default class TodayWeather {
                 timePeriod = 'Night';
             }
             const icon = timeStamp.weather[0].icon;
-            const weatherType = capitalize(timeStamp.weather[0].description);
+            const weatherType = capitalize(timeStamp.weather[0].main);
             const temperature = Math.round(timeStamp.main.temp);
 
             const infoItem = `<li class="today-info__content__item">

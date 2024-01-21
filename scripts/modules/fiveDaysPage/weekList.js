@@ -27,7 +27,7 @@ export default class WeekList {
             const temp = Math.round(day[index].main.temp);
             const dayOfMonth = date.getDate().toString().padStart(2, '0');
             const month = (date.getMonth() + 1).toString().padStart(2, '0');
-            const weatherType = capitalize(day[index].weather[0].description);
+            const weatherType = capitalize(day[index].weather[0].main);
 
             weekItemsHtml += `<li class="day-week__item">
             <div class="day-week__name">${dayOfWeekName}</div>
