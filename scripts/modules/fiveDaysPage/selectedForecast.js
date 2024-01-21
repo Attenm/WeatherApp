@@ -42,7 +42,7 @@ export default class SelectedForecast {
         this.selectedDayWeather.forEach(forecast => {
             const date = new Date(forecast.dt*1000);
             const hours = date.getHours().toString().padStart(2,'0');
-            const weatherType = capitalize(forecast.weather[0].description);
+            const weatherType = capitalize(forecast.weather[0].main);
             const icon = forecast.weather[0].icon;
             const temp = Math.round(forecast.main.temp);
 

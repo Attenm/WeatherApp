@@ -3,6 +3,7 @@
         @include standardContainer;
         padding: 17px;
         font-size: 14px;
+        width: calc(100vw - 21px * 2);
     }
 
     &__header {
@@ -21,7 +22,6 @@
         padding-top: 16px;
         display: flex;
         justify-content: space-around;
-        flex-wrap: nowrap;
         overflow: hidden;
     }
 

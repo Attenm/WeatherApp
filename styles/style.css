@@ -26,6 +26,7 @@ body {
   background: linear-gradient(180deg, #062C43 0%, #064469 100%);
   background-position-y: 58px;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .header {
@@ -172,6 +173,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 17px;
   font-size: 14px;
+  width: calc(100vw - 42px);
 }
 .today-info__header {
   display: flex;
@@ -187,7 +189,6 @@ body {
   padding-top: 16px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;
   overflow: hidden;
 }
 .today-info__content__item {
@@ -250,6 +251,7 @@ body {
 .near-cities__name {
   font-size: 14px;
   margin: 13px 0;
+  text-align: center;
 }
 .near-cities__weather-icon {
   width: 50%;
@@ -325,9 +327,6 @@ body {
   display: flex;
   line-height: 36px;
   justify-content: space-between;
-}
-.day-forecast__weather-type {
-  width: 35%;
 }
 .day-forecast__time {
   font-size: 14px;
