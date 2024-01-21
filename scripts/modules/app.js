@@ -11,6 +11,7 @@ class App {
         this.todayPage = new todayPage();
         this.currentWeather = null;
         this.fiveDaysPage = new FiveDaysPage();
+        this.contentContainer = null;
     }
 
     init(){
@@ -31,9 +32,13 @@ class App {
     
             const contentContainer = '<div class="content"></div>';
             document.querySelector('.app__wrapper').insertAdjacentHTML('beforeend', contentContainer);
-    
+            this.contentContainer = document.querySelector('.content');
             this.todayPage.render();
         })
+    }
+
+    clearPage(){
+        this.contentContainer.innerHTML = '';
     }
 }
 const app = new App();

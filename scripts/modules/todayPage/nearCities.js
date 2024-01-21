@@ -27,7 +27,7 @@ export default class NeatCities {
             <img class="near-cities__weather-icon" src="./icons/weather-icons/${weatherIcon}.png" alt="weather img">
             <div class="near-cities__weather-state">${weatherName}</div>
             <div class="near-cities__info">
-                <span class="info__range">${temp}&deg;</span>
+                <div class="info__range">${temp}&deg;</div>
             </div>
         </li>`
         });

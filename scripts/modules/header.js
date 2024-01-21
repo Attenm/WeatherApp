@@ -7,9 +7,10 @@ export default class Header{
         this.navigation = null;
         this.app = null;
     }
-
+    
     render(){
         this.app = app;
+
         const headerHtml = `<div class="header">
             <div class="navigation">
                 <a href="index.html" class="logo__container">
@@ -37,10 +38,10 @@ export default class Header{
                 this.toggleStyles(e);
                 const forecastType = e.target.dataset.weathertype;
                 if(forecastType === "weather"){
-                    this.app.fiveDaysPage.remove();
+                    app.clearPage();
                     this.app.todayPage.render();
                 } else {
-                    this.app.todayPage.remove();
+                    app.clearPage();
                     this.app.fiveDaysPage.render();
                 }
             }

@@ -184,7 +184,7 @@ body {
 .today-info__content__list {
   padding-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: nowrap;
 }
 .today-info__content__item {
@@ -255,7 +255,7 @@ body {
   display: flex;
   color: #B0B0B0;
   margin-top: 8px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .day-week__list {
@@ -287,7 +287,8 @@ body {
   display: flex;
   color: #B0B0B0;
   margin-top: 8px;
-  justify-content: center;
+  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .day-forecast__container {

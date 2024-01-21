@@ -28,8 +28,4 @@ export default class todayPage {
         this.nearCitiesSearch.render();
         this.nearCities.render();
     }
-
-    remove(){
-        this.wrapper.innerHTML = '';
-    }
 }

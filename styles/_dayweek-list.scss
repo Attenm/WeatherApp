@@ -19,5 +19,6 @@
 
     &__info{
         @include tempInfo;
+        justify-content: space-between;
     }
 }

@@ -8,7 +8,7 @@ export default class InfoBar {
     render(){
         this.app = app;
         const humidity = app.currentWeather.main.humidity;
-        const windSpeed = app.currentWeather.wind.speed;
+        const windSpeed = Math.round(app.currentWeather.wind.speed);
 
         const infoBarList = `<ul class="info-bar__list">
             <li class="info-bar__item">
