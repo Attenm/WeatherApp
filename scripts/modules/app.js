@@ -27,9 +27,6 @@ class App {
 
         Promise.all(promises).then(() => {
             this.header.render();
-            console.log(this.fiveDaysWeather);
-            console.log(this.currentWeather);
-    
             const contentContainer = '<div class="content"></div>';
             document.querySelector('.app__wrapper').insertAdjacentHTML('beforeend', contentContainer);
             this.contentContainer = document.querySelector('.content');

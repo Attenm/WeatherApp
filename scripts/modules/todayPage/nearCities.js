@@ -43,7 +43,6 @@ export default class NeatCities {
                     return currentWeather.json();
                 })
                 .then((data)=>{
-                    console.log(data.list.slice(2));
                     resolve(data.list.slice(2));
                 })
         })

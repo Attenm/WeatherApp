@@ -7,6 +7,10 @@
         @include weatherItem;
     }
 
+    &__item--active {
+        background-color: $color-accent-dark;
+    }
+
     &__name{
         font-size: 14px;
         margin: 13px 0;

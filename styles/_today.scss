@@ -3,7 +3,7 @@
         @include standardContainer;
         padding: 17px;
         font-size: 14px;
-        width: calc(100vw - 21px * 2);
+        width: 100%;
     }
 
     &__header {
@@ -23,6 +23,7 @@
         display: flex;
         justify-content: space-around;
         overflow: hidden;
+        width: 100%;
     }
 
     &__content__item {
@@ -31,7 +32,6 @@
         align-items: center;
         text-align: center;
         gap: 6px;
-        min-width: 25%;
     }
 
     &__time, &__temp-range{

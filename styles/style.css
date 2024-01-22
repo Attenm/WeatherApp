@@ -173,7 +173,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 17px;
   font-size: 14px;
-  width: calc(100vw - 42px);
+  width: 100%;
 }
 .today-info__header {
   display: flex;
@@ -190,6 +190,7 @@ body {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
+  width: 100%;
 }
 .today-info__content__item {
   display: flex;
@@ -197,7 +198,6 @@ body {
   align-items: center;
   text-align: center;
   gap: 6px;
-  min-width: 25%;
 }
 .today-info__time, .today-info__temp-range {
   font-size: 12px;
@@ -280,6 +280,9 @@ body {
   align-items: center;
   padding-bottom: 8px;
   padding-inline: 12px;
+}
+.day-week__item--active {
+  background-color: rgba(27, 31, 41, 0.6);
 }
 .day-week__name {
   font-size: 14px;
