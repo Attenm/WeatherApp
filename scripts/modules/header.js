@@ -17,8 +17,8 @@ export default class Header{
                     <img src="icons/weather-icons/03n.png" alt="weather app logo" class="logo">
                 </a>
                 <ul class="weather-range__list">
-                    <li class="weather-range__item weather-range__item--active" data-weathertype="weather">Сьогодні</li>
-                    <li class="weather-range__item" data-weathertype="forecast">5 днів</li>
+                    <li class="weather-range__item weather-range__item--active" data-weathertype="weather">Today</li>
+                    <li class="weather-range__item" data-weathertype="forecast">5 Days</li>
                 </ul>
             </div>
             <div class="burger-menu__icon-holder">

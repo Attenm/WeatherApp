@@ -1,10 +1,14 @@
 
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     body {
         font-size: 24px;
+        height: 100%;
     }
 
+    .content{
+        gap: $gap-lg;
+    }
+    
     .header {
         height: 78px;
         padding: 0 30px;
@@ -25,7 +29,133 @@
         width: 23;
     }
 
-    .content {
-        padding: 18px 30px;
+    .day-week{
+        &__list{
+            grid-template-columns: repeat(5, 1fr);
+        }
+    
+        &__item{
+            padding-inline: 15px;
+        }
+    
+        &__name{
+            font-size: 24px;
+            font-weight: 600;
+            margin: 24px 0;
+        }
+    
+        &__weather-icon{
+            width: 60%;
+            margin-bottom: 25px;
+        }
+
+        &__weather-type{
+            font-size: 24px;
+        }
+    
+        &__info{
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+    
+    .search-city{
+        &__section{
+            height: 68px;
+            gap: $gap-lg;
+        }
+    }
+
+    .day-forecast {
+        &__container{
+            gap: 0;
+        }
+    
+        &__date-wrapper{
+            font-size: 24px;
+            height: 68px;
+            padding: 0 21px;
+            border-bottom: none;
+            border-radius: 20px 20px 0 0;
+        }
+    
+        &__list{ 
+            flex-direction: row;
+            border-radius: 0 0 20px 20px;
+            padding: 36px;
+        }
+        
+        &__item{
+            flex-grow: 1;
+            line-height: 36px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 42px;
+        }
+
+        &__time{
+            font-size: 30px;
+            order: 1;
+        }
+    
+        &__icon{
+            height: 90px;
+            order: 2;
+        }
+    
+        &__range{
+            font-size: 20px;
+            order: 4;
+        }
+    
+        &__weather-type{
+            order: 3;
+            width: auto;
+            font-size: 24px;
+        }
+    }
+
+    .date{
+        &__icon-calendar{
+            width: 20px;
+            height: 22px;
+        }
+    }
+
+    .error-page {
+        min-height: 100%;
+        border-radius: 20px;
+        background-image: url(../images/error-big.png);
+        background-size: cover;
+        background-position: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 25px 35px;
+
+        &__btn{
+            margin-bottom: 17px;
+        }
+
+        &__text{
+            margin-top: 195px;
+        }
+
+        &:before{
+            z-index: 0;
+            display: block;
+            position: absolute;
+            min-height: 100%;
+            background-color: $color-accent-dark;
+        }
+    }
+
+    .user-icon {
+        height: 68px;
+        width: 68px;
+    
+        &__holder{
+            min-width: 68px;
+        }
     }
 }

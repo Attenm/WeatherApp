@@ -1,0 +1,40 @@
+.error-page {
+    height: 100vh;
+    background-image: url(../images/error-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        width: 60%;
+    }
+
+    &__text{
+        width:fit-content;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    &__header{
+        padding-bottom: 14px;
+    }
+
+    &__btn{
+        width: 332px;
+        @include standardContainer;
+        color: #fff;
+        height: 66px;
+        min-height: 66px;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $color-accent-dark;
+        }
+    }
+
+}

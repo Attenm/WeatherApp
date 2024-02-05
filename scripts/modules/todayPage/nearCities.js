@@ -2,7 +2,7 @@ import location from "../location.js";
 import { apiKey } from "../constants.js";
 import { capitalize } from "../utils.js";
 
-export default class NeatCities {
+export default class NearCities {
     render() {
         this.getNearCitiesWeather().then((citiesList)=>{
            this.citiesList = citiesList;

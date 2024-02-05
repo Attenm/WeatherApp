@@ -1,9 +1,11 @@
 .today-info {
+    
     &__container {
         @include standardContainer;
         padding: 17px;
         font-size: 14px;
         width: 100%;
+        position: relative;
     }
 
     &__header {
@@ -18,12 +20,48 @@
         color: $color-secondary;
     }
 
-    &__content__list {
+    &__slider{
+        width: calc(100vw - (40px) * 2);
         padding-top: 16px;
-        display: flex;
-        justify-content: space-around;
         overflow: hidden;
-        width: 100%;
+    }
+
+    &__btn{
+        user-select: none;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    &__btn:active{
+        background-color: $color-accent-light;
+    }
+
+    &__btn--right {
+        position: absolute;
+        z-index: 1;
+        right: 5px;
+    }
+
+    &__btn--left {
+        z-index: 1;
+        position: absolute;
+        left: 5px;
+        transform: rotate(180deg);
+    }
+
+    &__content__list {
+        display: flex;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
     }
 
     &__content__item {

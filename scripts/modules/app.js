@@ -3,6 +3,7 @@ import RequestHandler from "./requestHandler.js";
 import todayPage from "./todayPage/todayPage.js";
 import { filteredDays } from "./utils.js";
 import FiveDaysPage from "./fiveDaysPage/fiveDaysPage.js";
+import ErrorPage from "./errorPage/erorPage.js";
 
 class App {
     constructor(){
@@ -12,6 +13,8 @@ class App {
         this.currentWeather = null;
         this.fiveDaysPage = new FiveDaysPage();
         this.contentContainer = null;
+        this.fiveDaysWeather = null;
+        this.location = null;
     }
 
     init(){

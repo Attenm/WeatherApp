@@ -9,6 +9,7 @@
         width: 100%;
         @include standardContainer;
         @include searchBar;
+        line-height: 48px;
     }
 
     &__search-icon {

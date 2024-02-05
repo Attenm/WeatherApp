@@ -4,7 +4,7 @@ import WeatherImage from "../todayPage/imageWeather.js";
 import InfoBar from "../todayPage/infoBar.js";
 import TodayWeather from "../todayPage/weatherToday.js";
 import NearCitiesSearch from "../todayPage/nearCitiesSearch.js";
-import NeatCities from "../todayPage/nearCities.js";
+import NearCities from "../todayPage/nearCities.js";
 
 export default class todayPage {
     constructor(){
@@ -15,7 +15,7 @@ export default class todayPage {
         this.infoBar = new InfoBar();
         this.todayWeatherBox = new TodayWeather();
         this.nearCitiesSearch = new NearCitiesSearch();
-        this.nearCities = new NeatCities();
+        this.nearCities = new NearCities();
     }
     
     render(){

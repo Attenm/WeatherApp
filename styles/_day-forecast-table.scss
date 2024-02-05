@@ -17,7 +17,7 @@
 
     &__list{
         padding: 19px 17px;
-        display: grid;
+        display: flex;
         flex-direction: column;
         gap: $gap-sm;
         @include standardContainer;
@@ -39,6 +39,10 @@
 
     &__range{
         font-size: 16px;
+    }
+
+    &__weather-type{
+        width: 100px;
     }
 }
 .date{
